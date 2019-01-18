@@ -64,3 +64,13 @@ Ensure that node is installed with the following commands.
 nvm install node
 nvm use node
 ```
+
+### Spectacle
+
+Spectacle is a simple utility that allows you to easily organize your windows without using a mouse.
+
+You can install Spectacle with the following terminal command:
+```
+brew cask install spectacle
+```
+
