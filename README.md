@@ -3,6 +3,20 @@ _Introduction_
 
 Let's get our machines set up for the initial phase of wdi.  We will be iteratively building out a development environment throughout the course, but the basics are fairly minimal.  Most of the tools we need can be installed with `homebrew`, a package manager for OS X.
 
+## Homebrew
+
+[Homebrew](https://brew.sh/) is an extremely popular and easy to use package manager for macOS. This is the tool we will use to install all of the software we need for this course.
+
+Install homebrew from the command line with the command:
+
+```shell
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+This install script will tell you the files it will create and ask for your password. **YOUR PASSWORD WILL NOT DISPLAY**, just keep typing.
+
+After the install, brew will print an output describing where to find more information on how to use it.
+
 ### Oh-My-Zsh!
 First, we will change the default "shell" or terminal environment to use one that is more friendly for developers.
 
