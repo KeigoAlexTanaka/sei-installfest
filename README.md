@@ -18,7 +18,7 @@ This install script will tell you the files it will create and ask for your pass
 After the install, brew will print an output describing where to find more information on how to use it.
 
 ### Oh-My-Zsh!
-First, we will change the default "shell" or terminal environment to use one that is more friendly for developers.
+[Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) is an open source, community-driven framework for managing your zsh configuration. First, we will change the default "shell" or terminal environment to use one that is more friendly for developers.
 
 Open the `Terminal` app and type the following two commands (Hit `<Enter>` after each):
 ```
