@@ -34,7 +34,9 @@ subl .
 
 [Homebrew](https://brew.sh/) is an extremely popular and easy to use package manager for macOS. This is the tool we will use to install all of the software we need for this course.
 
-Install homebrew from the command line with the command:
+1. Open the Terminal application, and run `which brew` to check if you have Homebrew installed already. The `which` Terminal command shows where on your computer a program is installed. If it is installed, the Terminal will output a file path. If it is not installed, the Terminal won't output anything.
+
+2. **Only if you do not have Homebrew installed**, run the command below to install Homebrew. Wait while Homebrew downloads and installs.
 
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -53,12 +55,15 @@ After the install, brew will print an output describing where to find more infor
 - [Bonus: Brew Fonts](https://github.com/Homebrew/homebrew-cask-fonts)
 
 ## Git
-Let's install `git` and a nifty helper for viewing files in the command line, `tree`.
+Let's install `git` and a nifty helper for viewing files in the command line, `tree`. The `tree` package adds a command to your Terminal that displays files in a tree view (instead of a list view like `ls`).
 
 ```
 brew install git
 brew install tree
 ```
+Now run the Terminal command `tree` to see a tree view of all the files inside your current directory!
+
+  >If you run `tree` from your root directory, it might be printing files for a LONG time! Remember that you can always use `ctrl + C` in the terminal to stop the currently running process.
 
 ## Bash Git Prompt
 
@@ -83,7 +88,7 @@ Save the file and quit Sublime Text.
 
 ## Configure Git
 
-We want to set a default name an email address that Git will use to identify our commits. We want to be sure to use the same email as the one we created our GitHub (and GitHub Enterprise) account with.
+We want to set a default name an email address that Git will use to identify our commits. We want to be sure to use the same email as the one we created our GitHub Enterprise account with.
 
 ```shell
 git config --global user.name "YOUR NAME HERE"
