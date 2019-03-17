@@ -88,7 +88,7 @@ Save the file and quit Sublime Text.
 
 ## Configure Git
 
-We want to set a default name an email address that Git will use to identify our commits. We want to be sure to use the same email as the one we created our GitHub Enterprise account with.
+1. We want to set a default name an email address that Git will use to identify our commits. We want to be sure to use the same email as the one we created our GitHub Enterprise account with.
 
 ```shell
 git config --global user.name "YOUR NAME HERE"
@@ -108,6 +108,19 @@ git config --global core.editor "subl -n -w"
 - [GitHub Setting username](https://help.github.com/articles/setting-your-username-in-git/#setting-your-git-username-for-every-repository-on-your-computer)
 - [GitHub Setting email](https://help.github.com/articles/setting-your-commit-email-address-in-git/)
 - [GitHub about commit email](https://help.github.com/articles/setting-your-commit-email-address-in-git/)
+
+2. Generate a SSH key for GitHub by [following GitHub's instructions](https://help.github.com/articles/generating-ssh-keys). This will allow you to use GitHub from your Terminal without entering your login information every time you push.
+
+Clarifying notes for GitHub's instructions that might be confusing:
+
+- When you are "[Adding a new SSH key to your GitHub Account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)" the following command:
+
+	```bash
+	$ pbcopy < ~/.ssh/id_rsa.pub
+  # Copies the contents of the id_rsa.pub file to your clipboard
+	```
+
+will take your SSH key that was saved to the file id_rsa.pub and copy it to your clipboard (similar to using Command-C, but with the command line).
 
 ## Node.js
 
