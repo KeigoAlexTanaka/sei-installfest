@@ -13,6 +13,8 @@ Slack is a cloud-based team collaboration tool. You will use this to communicate
 
 ### Sublime Text
 
+**Make sure Sublime Text is in the Applications folder.**
+
 Copy and paste the following to the terminal so that you can open files in your text editor through the command line.
 
 ```shell
